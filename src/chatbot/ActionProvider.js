@@ -51,11 +51,33 @@ class ActionProvider {
       "Here is a list of our top team members: \n",
       {
         widget: "Contact",
-        // loading: true,
-        // terminateLoading: true,
+        loading: true,
+        terminateLoading: true,
         // withAvatar: true,
       }
     );
+    this.addMessageToState(message);
+  };
+
+  handleAtmFinder = () => {
+    const message = this.createChatBotMessage(
+      "Here is a list of locations for atms: \n",
+      {
+        widget: "Atm locations",
+        loading: true,
+        terminateLoading: true,
+        // withAvatar: true,
+      }
+    );
+    this.addMessageToState(message);
+  };
+
+  handleQuestions = () => {
+    const message = this.createChatBotMessage("Here is a list questions: \n", {
+      widget: "Recently asked questions",
+      loading: true,
+      terminateLoading: true,
+    });
     this.addMessageToState(message);
   };
 }

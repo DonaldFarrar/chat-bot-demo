@@ -14,7 +14,7 @@ function Contact(props) {
     },
   ]);
 
-  // <ContactEntry name={i.name} title={i.title} phone={i.phone} />;
+
   return (
     <>
       <div className="info-list-container">

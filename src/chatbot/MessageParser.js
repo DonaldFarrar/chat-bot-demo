@@ -29,6 +29,12 @@ class MessageParser {
     if (input.includes("contact")) {
       return this.actionProvider.handleContactInfo();
     }
+    if (input.includes("atm")) {
+      return this.actionProvider.handleAtmFinder();
+    }
+    if (input.includes("questions")) {
+      return this.actionProvider.handleAtmFinder();
+    }
   }
 }
 

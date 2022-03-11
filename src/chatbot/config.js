@@ -1,8 +1,9 @@
 import React from "react";
 import { createChatBotMessage } from "react-chatbot-kit";
-//import Options from "../widgets/Options";
 import Contact from "../widgets/Contact";
 import GeneralOptions from "../widgets/Overview";
+import AtmLocations from "../widgets/AtmLocations";
+import Questions from "../widgets/Questions";
 
 /*
 The config controls every configurable aspect of the chatbot.
@@ -48,6 +49,14 @@ const config = {
       widgetName: "Contact",
       widgetFunc: (props) => <Contact {...props} />,
     },
+    {
+      widgetName: "Atm locations",
+      widgetFunc: (props) => <AtmLocations />,
+    },
+    {
+      widgetName: "Recently asked questions",
+      widgetFunc: (props) => <Questions />,
+    },
   ],
 };
 
@@ -68,20 +77,4 @@ createChatBotMessage("Ok, one moment", {
   widget: "overview"
 })
 
-
-
-starter point ====>
-
-const botName = "Keanu Reeves";
-
- botName: botName,
-  lang: "no",
-  customStyles: {
-    botMessageBox: {
-      backgroundColor: "#376B7E",
-    },
-    chatButton: {
-      backgroundColor: "#5ccc9d",
-    },
-  },
 */

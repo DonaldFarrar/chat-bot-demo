@@ -2,38 +2,39 @@ import React from "react";
 import Options from "./Options";
 
 const GeneralOptions = (props) => {
-//   console.log("props", props);
- console.log("props.actionProvier", props.actionProvier);
-//   console.log(
-//     "props.actionProvier.handleContactInfo",
-//     props.actionProvier.handleContactInfo
-//   );
+  console.log("props", props);
+  console.log("props.actionProvier", props.actionProvider);
+  //   console.log(
+  //     "props.actionProvier.handleContactInfo",
+  //     props.actionProvier.handleContactInfo
+  //   );
   const options = [
     {
       text: "Contact",
-      //handler: props.actionProvier.handleContactInfo,
+      handler: props.actionProvider.handleContactInfo,
       id: 1,
-    },
-    {
-      text: "Main Menu",
-      //handler: props.actionProvier.handleContactInfo,
-      id: 2,
-    },
-    {
-      text: "Registration/SignIn",
-      //handler: props.actionProvier.handleContactInfo,
-      id: 3,
-    },
-    {
-      text: "Accounts Page",
-      //handler: props.actionProvier.handleContactInfo,
-      id: 4,
     },
     {
       text: "Atm locations",
       //handler: props.actionProvier.handleContactInfo,
+      id: 2,
+    },
+    {
+      text: "Main Menu",
+      //handler: props.actionProvier.handleContactInfo,
+      id: 3,
+    },
+    {
+      text: "Registration/SignIn",
+      //handler: props.actionProvier.handleContactInfo,
+      id: 4,
+    },
+    {
+      text: "Accounts Page",
+      //handler: props.actionProvier.handleContactInfo,
       id: 5,
     },
+
     {
       text: "Recent Transactions",
       //handler: props.actionProvier.handleContactInfo,

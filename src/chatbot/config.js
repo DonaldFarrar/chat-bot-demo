@@ -11,7 +11,7 @@ The config controls every configurable aspect of the chatbot.
 Widgets are custom components that you want to render with a chatbot response.
 */
 
-const botName = "Keanu Reeves";
+const botName = "Benjamin";
 
 const config = {
   botName: botName,

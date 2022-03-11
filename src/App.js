@@ -8,7 +8,7 @@ import ActionProvider from "./chatbot/ActionProvider";
 function App() {
   return (
     <div className="App">
-      <div className="chatbot-box" style={{ maxWidth: "300px" }}>
+      <div className="chatbot-box" style={{ maxWidth: "500px" }}>
         <h1>ChatBot</h1>
         <Chatbot
           config={config}

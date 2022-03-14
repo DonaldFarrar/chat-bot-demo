@@ -1,12 +1,13 @@
 var axios = require("axios").default;
 
 var options = {
-  method: "GET",
-  url: "https://kfc-locations.p.rapidapi.com/kfc/location/0",
+  method: 'GET',
+  url: 'https://us-zip-code-information.p.rapidapi.com/',
+  params: {zipcode: '30043'},
   headers: {
-    "x-rapidapi-host": "kfc-locations.p.rapidapi.com",
-    "x-rapidapi-key": "50a940bfe9msh4b7acc0eab8aa9bp1bab77jsnc3342cb0f0dd",
-  },
+    'x-rapidapi-host': 'us-zip-code-information.p.rapidapi.com',
+    'x-rapidapi-key': '4aebd532b6msh3819f4cf9ce9832p159cd1jsnf8a23581c895'
+  }
 };
 
 function getLocation() {

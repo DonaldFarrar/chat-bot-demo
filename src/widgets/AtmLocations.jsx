@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from "react";
 
-import getLocation from '../atmData';
-
+import getLocation from "../atmData";
 
 function Location() {
   const [atmInfo, setAtmInfo] = useState([]);
@@ -9,7 +8,7 @@ function Location() {
 
   useEffect(() => {
     const getLocations = async () => {
-      const atmInfo = await getLocation();
+      const atmInfo = await getLocation;
       console.log("atminfo: ", atmInfo);
       setAtmInfo(atmInfo);
       setLoading(false);
@@ -23,10 +22,10 @@ function Location() {
         <div className="column" loading={loading.toString()}>
           <ul>
             <h2>CacheMoney ATMs</h2>
-            <li>Address: {info.address}</li>
-            <li>Zipcode: {info.zipCode}</li>
-            <li>State Name:{info.stateName}</li>
-            <li>City Name:{info.cityName}</li>
+            <li>Zipcode: {info.ZipCode}</li>
+            {/* <li>Address: {info.address}</li> */}
+            <li>City Name:{info.City}</li>
+            <li>State Name:{info.State}</li>
           </ul>
         </div>
       </div>

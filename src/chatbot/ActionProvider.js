@@ -35,7 +35,7 @@ class ActionProvider {
 
   handleOptions = (options) => {
     const message = this.createChatBotMessage(
-      "Please do something here for me.",
+      //"Please do something here for me.",
       {
         widget: "overview",
         loading: true,

@@ -80,6 +80,20 @@ class ActionProvider {
     });
     this.addMessageToState(message);
   };
+
+  handleGlobalStats = () => {
+    const message = this.createChatBotMessage(
+      "Here's the latest global stats.",
+      {
+        widget: "globalStatistics",
+        loading: true,
+        terminateLoading: true,
+        withAvatar: true,
+      }
+    );
+
+    this.addMessageToState(message);
+  };
 }
 
 export default ActionProvider;

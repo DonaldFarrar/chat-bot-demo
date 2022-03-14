@@ -4,6 +4,7 @@ import Contact from "../widgets/Contact";
 import GeneralOptions from "../widgets/Overview";
 import AtmLocations from "../widgets/AtmLocations";
 import Questions from "../widgets/Questions";
+import GlobalStatistics from "../widgets/GlobalStatistics";
 
 /*
 The config controls every configurable aspect of the chatbot.
@@ -56,6 +57,10 @@ const chatbotConfig = {
     {
       widgetName: "Recently asked questions",
       widgetFunc: (props) => <Questions />,
+    },
+    {
+      widgetName: "globalStatistics",
+      widgetFunc: (props) => <GlobalStatistics />,
     },
   ],
 };

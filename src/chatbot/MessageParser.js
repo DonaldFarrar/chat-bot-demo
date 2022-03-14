@@ -35,6 +35,14 @@ class MessageParser {
     if (input.includes("questions")) {
       return this.actionProvider.handleAtmFinder();
     }
+    if (
+      message.includes("stats") ||
+      message.includes("statistics") ||
+      message.includes("deaths")
+    ) {
+      return;
+      this.actionProvider.handleGlobalStats();
+    }
   }
 }
 

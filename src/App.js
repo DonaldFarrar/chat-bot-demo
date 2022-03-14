@@ -18,7 +18,7 @@ function App() {
         <div className="react-chatbot-kit-chat-header">
           <h1>Benjamin</h1>
         </div>
-        <Popup trigger={<button> Trigger</button>} position="right center">
+        <Popup trigger={<button> Trigger</button>} position="center">
           <div>
             <Chatbot
               config={chatbotConfig}

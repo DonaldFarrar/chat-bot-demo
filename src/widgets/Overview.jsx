@@ -28,13 +28,12 @@ const GeneralOptions = (props) => {
       //handler: props.actionProvider.handleContactInfo,
       id: 4,
     },
+    {
+      name: "Show global statistics",
+      handler: props.actionProvider.handleGlobalStats,
+      id: 5,
+    },
   ];
-
-  //   const buttonsMarkup = options.map((option) => (
-  //     <button key={option.id} onClick={option.handler} className="option-button">
-  //       {option.text}
-  //     </button>
-  //   ));
 
   return <Options options={options} title="Options" {...props} />;
 };

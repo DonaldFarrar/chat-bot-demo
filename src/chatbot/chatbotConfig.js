@@ -18,16 +18,16 @@ const chatbotConfig = {
   lang: "no",
   customStyles: {
     botMessageBox: {
-      backgroundColor: "#376B7E",
+      backgroundColor: "none",
     },
     chatButton: {
-      backgroundColor: "#5ccc9d",
+      backgroundColor: "gold",
     },
   },
   initialMessages: [
     createChatBotMessage(`Welcome, `),
     createChatBotMessage(
-      "Here's a quick overview of what I can help you with. .",
+      "Here's a quick overview of what I can help you with...",
       { widget: "options" }
       //   {
       //     withAvatar: false,

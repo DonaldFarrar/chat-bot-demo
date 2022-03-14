@@ -33,7 +33,7 @@ function Location() {
   });
   return (
     <>
-      <h2>CacheMoney ATMs</h2>
+      <h2 id="atm-header" >CacheMoney ATMs</h2>
       <div className="atm_list">{listAtms}</div>
     </>
   );

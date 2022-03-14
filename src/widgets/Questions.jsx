@@ -19,7 +19,7 @@ function Questions() {
           <a href="/test">click here to be redirected to the contact page.</a>
         </li>
       </ol>
-      <h4> Problem creating a bank account</h4>
+      <h4 id="chatbot-faq-create-account-header"> Problem creating a bank account</h4>
       <ol>
         <p>Follow these steps:</p>
         <li>
@@ -57,7 +57,7 @@ function Questions() {
             <li>Click the Register Me Button</li>
             <li>
               <a href="/test">
-                click here to be redirected to the registration page
+                Click here to be redirected to the registration page
               </a>
             </li>
           </ol>

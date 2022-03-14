@@ -8,6 +8,7 @@ function Questions() {
   const extraContent = (
     <div className="extra-content-container">
       <ol className="extra-content">
+        <h4>Problem Signing in.</h4>
         <p>Attempt the following:</p>
         <li>Input your username and password then click sign in</li>
         <li>
@@ -60,7 +61,6 @@ function Questions() {
               </a>
             </li>
           </ol>
-          <h4>Problem Signing in.</h4>
         </ul>
       </div>
       <div className="read-more-container">

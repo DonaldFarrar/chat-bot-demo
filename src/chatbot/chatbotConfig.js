@@ -13,7 +13,7 @@ Widgets are custom components that you want to render with a chatbot response.
 
 const botName = "Benjamin";
 
-const config = {
+const chatbotConfig = {
   botName: botName,
   lang: "no",
   customStyles: {
@@ -60,7 +60,7 @@ const config = {
   ],
 };
 
-export default config;
+export default chatbotConfig;
 
 /*
 NOTES:

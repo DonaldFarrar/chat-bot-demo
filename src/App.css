@@ -11,17 +11,23 @@
 
 .react-chatbot-kit-chat-container {
   outline-style: solid;
+  outline-color: darkgreen;
+  outline-width: 10px;
 }
 .react-chatbot-kit-chat-inner-container {
+  
 }
 
 .react-chatbot-kit-chat-header {
+  
 }
 
 .react-chatbot-kit-chat-input-container {
+  
 }
 
 .react-chatbot-kit-chat-message-container {
+  
 }
 
 .react-chatbot-kit-chat-input {
@@ -37,12 +43,15 @@
 }
 
 .react-chatbot-kit-chat-btn-send-icon {
+  
 }
 
 .react-chatbot-kit-chat-bot-message-container {
 }
 
 .react-chatbot-kit-chat-bot-avatar-container {
+  background:empty;
+  
 }
 
 .react-chatbot-kit-chat-bot-avatar-icon {

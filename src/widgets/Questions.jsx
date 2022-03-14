@@ -1,43 +1,78 @@
+// import { Link } from "react-router-dom";
+// import Test from "./Test";
+import React, { useState } from "react";
+
 function Questions() {
+  const [readMore, setReadMore] = useState(false);
+
+  const extraContent = (
+    <div className="extra-content-container">
+      <ol className="extra-content">
+        <p>Attempt the following:</p>
+        <li>Input your username and password then click sign in</li>
+        <li>
+          If you forgot your password or username, email staff and request a
+          link to reset them
+        </li>
+        <li>
+          <a href="/test">click here to be redirected to the contact page.</a>
+        </li>
+      </ol>
+      <h4> Problem creating a bank account</h4>
+      <ol>
+        <p>Follow these steps:</p>
+        <li>
+          If you don't have an account then create an account using the steps
+          above in:
+          <a href="/test">Trying to create an user account.</a>
+        </li>
+        <li>
+          If you already have an account then login in using your username and
+          password
+        </li>
+
+        <li> Navigate to the create a bank account page</li>
+
+        <li>Create an account: Checking/Saving or any custom title </li>
+        <li>
+          <a href="/test">click here to be redirected to the signin page</a>
+        </li>
+      </ol>
+    </div>
+  );
+  const linkName = readMore ? "Read Less << " : "Read More >> ";
   return (
     <>
       <div className="questions-container">
-        <h1>Stuff is going to go here!</h1>
+        <h1>Recently asked questions</h1>
         <ul>
+          <h4>Trying to create an user account.</h4>
           <ol>
-            <h4>Trying to create an user account.</h4>
             <p>Follow these steps: </p>
+
             <li>Go to sign in page.</li>
             <li>Click registeration Link</li>
             <li>Fill out all fields</li>
             <li>Click the Register Me Button</li>
-            {/* click here: //link */}
-          </ol>
-          <ol>
-            <h4>Problem Signing in.</h4>
-            <p>Follow these steps: </p>
-            <li>attempt the following:</li>
-            <li>input your username and password then click sign in</li>
             <li>
-              if you forgot your password or username, email staff and request a
-              link to reset them
+              <a href="/test">
+                click here to be redirected to the registration page
+              </a>
             </li>
-            {/* click here: //link */}
           </ol>
-          <ol>
-            <h4> Problem creating a bank account</h4>
-            <p>follow these steps</p>
-            <li>
-              if you don't have an account then create an account using the
-              steps above in "creating an account list"
-            </li>
-            <li> navigate to the create a bank account page</li>
-            {/*click here //link */}
-            <li>login in using your username and password</li>
-            <li>create an account: checking or saving</li>
-          </ol>
-          <li></li>
+          <h4>Problem Signing in.</h4>
         </ul>
+      </div>
+      <div className="read-more-container">
+        <button
+          className="read-more-link"
+          onClick={() => {
+            setReadMore(!readMore);
+          }}
+        >
+          <h2>{linkName}</h2>
+        </button>
+        {readMore && extraContent}
       </div>
     </>
   );

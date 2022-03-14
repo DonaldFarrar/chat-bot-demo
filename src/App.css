@@ -1,4 +1,4 @@
-.App{
+/* .App{
   text-align: center;
   color: black;
   background-color:white;
@@ -8,11 +8,11 @@
 a {
   text-decoration: none;
   color: rgb(44, 77, 44);
-}
+} */
 
-a:hover {
+/* a:hover {
   color:gold;
-}
+} */
 
 .chatbot-box {
   max-width: 360px;
@@ -55,8 +55,7 @@ a:hover {
   font-size: 18px;
 }
 
-.react-chatbot-kit-chat-bot-message-arrow {
-}
+
 
 .options-container {
   margin: 18px 0;
@@ -122,22 +121,11 @@ a:hover {
   cursor: pointer;
 }
 
-.react-chatbot-kit-chat-btn-send-icon {
-  
-}
 
 .react-chatbot-kit-chat-bot-avatar-container {
   display: none;
 }
 
-.react-chatbot-kit-chat-bot-avatar-icon {
-}
-
-.react-chatbot-kit-chat-bot-avatar-letter {
-}
-
-.react-chatbot-kit-chat-bot-loading-icon-container {
-}
 
 .react-chatbot-kit-user-chat-message-container {
   margin-top: 12px;
@@ -240,33 +228,3 @@ a:hover {
   margin-top: 6px;
 }
 
-.chatbot-loader-container {
-}
-
-#chatbot-loader #chatbot-loader-dot1 {
-}
-
-#chatbot-loader #chatbot-loader-dot2 {
-}
-
-#chatbot-loader #chatbot-loader-dot3 {
-}
-
-.react-chatbot-kit-error {
-}
-
-.react-chatbot-kit-error-container {
-}
-
-.react-chatbot-kit-error-header {
-}
-
-.react-chatbot-kit-error-docs {
-}
-/* .chatbot-box{
-  display: flex;
-  border-top: black;
-  justify-content: center;
-  align-items: center;
-  
-} */

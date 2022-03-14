@@ -22,26 +22,11 @@ const GeneralOptions = (props) => {
       handler: props.actionProvider.handleQuestions,
       id: 3,
     },
-    {
-      text: "Registration/SignIn",
-      //handler: props.actionProvider.handleContactInfo,
-      id: 4,
-    },
-    {
-      text: "Accounts Page",
-      //handler: props.actionProvider.handleContactInfo,
-      id: 5,
-    },
 
-    {
-      text: "Recent Transactions",
-      //handler: props.actionProvider.handleContactInfo,
-      id: 6,
-    },
     {
       text: "Information",
       //handler: props.actionProvider.handleContactInfo,
-      id: 7,
+      id: 4,
     },
   ];
 

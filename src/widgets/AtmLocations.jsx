@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 
-import { getAtmData } from "../atmData";
+import getLocation from '../atmData';
+
 
 function Location() {
   const [atmInfo, setAtmInfo] = useState([]);
@@ -8,23 +9,32 @@ function Location() {
 
   useEffect(() => {
     const getLocations = async () => {
-      const atmInfo = await getAtmData();
+      const atmInfo = await getLocation();
+      console.log("atminfo: ", atmInfo);
       setAtmInfo(atmInfo);
       setLoading(false);
     };
     getLocations();
   }, []);
 
-  return (
-    <>
+  const listAtms = atmInfo.map((info) => {
+    return (
       <div className="atmInfo">
         <div className="column" loading={loading.toString()}>
-          <p>Address: {atmInfo.address}</p>
-          <p>Zipcode: {atmInfo.zipCode}</p>
-          <p>State Name:{atmInfo.stateName}</p>
-          <p>City Name:{atmInfo.cityName}</p>
+          <ul>
+            <h2>CacheMoney ATMs</h2>
+            <li>Address: {info.address}</li>
+            <li>Zipcode: {info.zipCode}</li>
+            <li>State Name:{info.stateName}</li>
+            <li>City Name:{info.cityName}</li>
+          </ul>
         </div>
       </div>
+    );
+  });
+  return (
+    <>
+      <div className="atm_list">{listAtms}</div>
     </>
   );
 }
